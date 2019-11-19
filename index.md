@@ -18,18 +18,20 @@ See [odoo/odoo#30759](https://github.com/odoo/odoo/pull/30759) for the code.
 ### For Odoo SA Developers
 
 - Keep only a `i18n/<module>.pot` file in developed module
-- Translations are downloaded from "https://nightly.odoo.com" by default (or any `i18n.default.server` value)
+*Translations are downloaded from "https://nightly.odoo.com" by default (or any `i18n.default.server` value)*
 
-### For Integrator Serving Translations
+### For Integrator
 
 - Deploy only a `i18n/<module>.pot` file in custom module
 - Serve translation pack at `https://<mywebsite>/i18n/<version>/<lang>.tar.xz`
 - Add `i18n_location: "https://<mywebsite>/"` inside the `<module>/__manifest__.py` file
+*Translations for own modules are served from integrator server, can also set a `i18n.default.server` value to avoid odoo's nightly servers*
 
 ### For Independant Developer
 
 - Publish all translations and `.pot` inside `i18n/` folder
 - Add `"depends": ["i18n_server"]` and `i18n_locally": "True"` inside the `<module>/__manifest__.py` file
+*The user's server becomes a translation server and will fetch translations locally for these modules*
 
 ## Test it
 
