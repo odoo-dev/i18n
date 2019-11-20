@@ -35,7 +35,7 @@ See [odoo/odoo#30759](https://github.com/odoo/odoo/pull/30759) for the code.
 *The user's server becomes a translation server and will fetch translations locally for these modules*
 
 - Publish all translations and `.pot` inside `i18n/` folder
-- Add `"depends": ["i18n_server"]` and `i18n_locally": "True"` inside the `<module>/__manifest__.py` file
+- Add `"depends": ["i18n_server"]` and `i18n_locally": True` inside the `<module>/__manifest__.py` file
 
 ## Test it
 
