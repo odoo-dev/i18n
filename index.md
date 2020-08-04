@@ -44,7 +44,7 @@ Test on the [runbot](http://runbot.odoo.com/runbot/quick_connect/54025).
 This test server only contains the translations pack for the following version and languages:
 
 - **14.0alpha1**
-  - [ar](14.0alpha1/ar.tar.xz)
-  - [de](14.0alpha1/de.tar.xz)
-  - [fr](14.0alpha1/fr.tar.xz)
-  - [nl](14.0alpha1/nl.tar.xz)
+  - [ar](13.5alpha1/ar.tar.xz)
+  - [de](13.5alpha1/de.tar.xz)
+  - [fr](13.5alpha1/fr.tar.xz)
+  - [nl](13.5alpha1/nl.tar.xz)
